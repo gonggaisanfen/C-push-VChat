@@ -99,6 +99,7 @@ content = random.choice(messages)
 requests.post("http://www.pushplus.plus/send", json={
     "token": PUSHPLUS_TOKEN,
     "title": "Clauddy",
-    "content": content
+    "content": content,
+    "template": "txt"
 })
 print(f"发送了：{content}")
